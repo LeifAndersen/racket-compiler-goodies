@@ -4,6 +4,8 @@
          compiler/decompile
          racket/port)
 
+(provide (all-defined-out))
+
 (define (syntax->zo stx)
   (define x (compile-syntax stx))
   (define-values (in out) (make-pipe))
