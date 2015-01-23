@@ -1,7 +1,8 @@
 #lang info
 (define collection "compiler-goodies")
 (define deps '("base"
-               "rackunit-lib"))
+               "rackunit-lib"
+               "compiler-lib"))
 (define build-deps '("scribble-lib" "racket-doc"))
 (define scribblings '(("scribblings/compiler-goodies.scrbl" ())))
 (define pkg-desc "Description Here")
