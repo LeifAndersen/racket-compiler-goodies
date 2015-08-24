@@ -1,6 +1,7 @@
 #lang racket/base
 
 (require compiler/zo-parse
+         compiler/zo-marshal
          compiler/decompile
          racket/port)
 
@@ -17,3 +18,9 @@
 
 (define (syntax->decompile stx)
   (decompile (syntax->zo stx)))
+
+(define (zo->compiled-expression zo)
+  (parameterize ([read-accept-compiled #t])
+    (define x (zo-marshal zo))
+    (with-input-from-bytes x
+      (lambda () (read)))))
