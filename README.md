@@ -2,7 +2,9 @@ COMPILER GOODIES IS DEPRECATED
 ==============================
 The compiler-goodies package is now deprecated.
 
-The features found here can be found in [the zordoz library][1]
+The features found here can be found in [the zordoz library][1], which can be downloaded from the command line by doing:
+
+    raco pkg install zordoz
 
 compiler-goodies
 ================
