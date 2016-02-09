@@ -1,9 +1,17 @@
 #lang scribble/manual
-@require[@for-label[compiler-goodies
+@require[scribble/core
+         @for-label[compiler-goodies
                     racket/base]]
 
 @title{Compiler Goodies}
 @author{Leif Andersen}
+
+@(define red
+   (style #f
+          (list (color-property "red"))))
+
+@elem[#:style red]{@larger{@larger{@larger{@larger{@larger{This library is deprecated. Please use
+@hyperlink["https://github.com/bennn/zordoz"]{Zordoz} instead.}}}}}}
 
 @defmodule[compiler-goodies]
 
